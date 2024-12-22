@@ -1,4 +1,4 @@
-task = input("Enter your task:" )
+Task = input("Enter your task:" )
 Priority = input("Priority (high/medium/low)")
 Time_bound =input("Is it time-bound?")
 
@@ -6,15 +6,15 @@ Time_bound =input("Is it time-bound?")
 match Priority:
     case "high":
          if Time_bound =="yes":
-            print("you have an important task Now, that requires immediate attention today!")
+            print("'",Task,"'you have an important task Now, that requires immediate attention today!")
          elif Time_bound =="No":
            print("you have an important task Now")
 
     case "medium" :
-        print("don't forget your project")
+        print("'",Task,"'don't forget your project")
 
     case "low" :
-        print("complet your project when you have time ")
+        print("'",Task,"'complet your project when you have time ")
 
 
 
