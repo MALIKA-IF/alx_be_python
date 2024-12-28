@@ -1,9 +1,9 @@
 #ask the user for a single task
-task = input("Enter your task:" )
+task=input("Enter your task:" )
 #ask the user for its priority level
-priority = input("Priority (high/medium/low): ").lower()
+priority=input("Priority (high/medium/low): ").lower()
 #ask the user for it is time-sensitive
-time_bound =input("Is it time-bound? (yes, no): ").lower()
+time_bound=input("Is it time-bound? (yes/no): ").lower()
 
 #Finish project report' is a high priority task that requires immediate attention today!
 match priority:
