@@ -7,9 +7,11 @@ def perform_operation(num1, num2, operation):
         result=num1-num2
     elif operation=="multiply":
         result=num1*num2
-    elif operation=="divide" & num2!=0:
+    elif operation=="divide":
+        try:
             result=num1/num2
-            
+        except ZeroDivisionError:
+            result=0   
     print(result)            
 
 
