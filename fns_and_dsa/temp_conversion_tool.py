@@ -22,10 +22,3 @@ elif choice=="C":
   print(temp,"°F is",C1,"°C")
 else:
   print("Invalid temperature. Please enter a numeric value.")  
-"""
-temp=int(input("Enter the temperature to convert: "))
-choice=input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
-if choice=="F":
-   F=convert_to_celsius(temp)
-   print(F)
- """
