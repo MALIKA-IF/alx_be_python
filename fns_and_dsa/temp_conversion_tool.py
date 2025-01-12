@@ -13,11 +13,19 @@ def convert_to_fahrenheit(celsius):
 temp=int(input("Enter the temperature to convert: "))
 choice=input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
 C1=convert_to_celsius(temp)
-F1=convert_to_fahrenheit(temp)
+
 if choice=="F":
+  F1=convert_to_celsius(temp)
   print(temp,"°C is",F1,"°F")
 elif choice=="C":
+  C1=convert_to_fahrenheit(temp)
   print(temp,"°F is",C1,"°C")
 else:
   print("Invalid temperature. Please enter a numeric value.")  
-  
+"""
+temp=int(input("Enter the temperature to convert: "))
+choice=input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
+if choice=="F":
+   F=convert_to_celsius(temp)
+   print(F)
+ """
