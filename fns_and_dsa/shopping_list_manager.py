@@ -27,21 +27,21 @@ def main():
         display_menu()
         choice=int(input("Enter your choice: "))
 
-        if choice==1:
+        if choice == 1:
             # Prompt for and add an item
             x=input("enter your Items ")
             add_items(x)
             pass
-        elif choice==2:
+        elif choice == 2:
             # Prompt for and remove an item
             y=input("enter your Items ")
             remove_list(y)
             pass
-        elif choice==3:
+        elif choice == 3:
             # Display the shopping list
             display_list()
             pass
-        elif choice==4:
+        elif choice == 4:
             print("Goodbye!")
             break
         else:
