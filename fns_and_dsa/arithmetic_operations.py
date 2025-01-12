@@ -1,6 +1,6 @@
 #define function perform_operation
 
-def perform_operation(num1, num2, operation):
+def perform_operation(num1,num2,operation):
     if operation=="add":
         result=num1+num2
     elif operation=="subtract":
@@ -9,10 +9,11 @@ def perform_operation(num1, num2, operation):
         result=num1*num2
     elif operation=="divide" :
             if num2==0:
+              print("you can not divide by zero")
               result=0
             else:  
               result=num1/num2 
-    print(result)            
+    return result            
 
 
 
