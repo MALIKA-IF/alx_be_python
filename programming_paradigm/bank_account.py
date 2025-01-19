@@ -7,10 +7,10 @@ class BankAccount:
         return self.account_balance+amount
         pass
     def withdraw(self, amount):
-        if amount !=0:
+        if self.account_balance !=0:
           print("Withdrew: $",self.account_balance-amount)
           return True
-        elif amount==0:
+        elif self.account_balance <= 0 & amount<self.account_balance:
           print("Insufficient funds")
           return False
         pass
