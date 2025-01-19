@@ -13,8 +13,8 @@ class BankAccount:
           return False
         pass
     def display_balance(self):
-        print("the current balance",self.account_balance)
-        pass
+         print("Current Balance: $",self.account_balance)
+        
 
 #bank1=BankAccount(100)
 #print(bank1.deposit(10))    
