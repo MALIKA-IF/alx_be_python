@@ -18,5 +18,4 @@ class BankAccount:
          print("Current Balance: $",self.__account_balance)
         
 
-bank1=BankAccount(100)
-print(bank1.deposit(0))    
+ 
