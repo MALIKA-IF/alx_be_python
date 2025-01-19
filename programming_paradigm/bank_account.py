@@ -1,6 +1,6 @@
 class BankAccount:
     def __init__(self, account_balance):
-        self.account_balance=0
+        self.account_balance=account_balance
 
         
     def deposit(self ,amount):
@@ -15,3 +15,6 @@ class BankAccount:
     def display_balance(self):
         return self.account_balance
         pass
+
+#bank1=BankAccount(100)
+#print(bank1.deposit(10))    

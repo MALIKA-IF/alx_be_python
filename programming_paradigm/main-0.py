@@ -7,7 +7,7 @@ def main():
         print("Usage: python main.py <command>:<amount>")
         print("Commands: deposit, withdraw, display")
         sys.exit(1)
-
+  
     command, *params = sys.argv[1].split(':')
     amount = float(params[0]) if params else None
 
