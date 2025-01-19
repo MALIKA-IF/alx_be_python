@@ -8,8 +8,10 @@ class BankAccount:
         pass
     def withdraw(self, amount):
         if amount !=0:
-          return self.account_balance-amount
+          print("Withdrew: $",self.account_balance-amount)
+          return True
         elif amount==0:
+          print("Insufficient funds")
           return False
         pass
     def display_balance(self):
