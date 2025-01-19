@@ -13,7 +13,7 @@ class BankAccount:
           return False
         pass
     def display_balance(self):
-        return self.account_balance
+        print("the current balance",self.account_balance)
         pass
 
 #bank1=BankAccount(100)
