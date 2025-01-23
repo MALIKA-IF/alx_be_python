@@ -9,15 +9,20 @@ class BankAccount:
     
 #method withraw
     def withdraw(self, amount): 
-       
+      if self.account_balance > amount:
+          self.account_balance=self.account_balance-amount
+          return True
+      else:
+          return False
+      
+      """    
         if self.account_balance <= 0:
-          return "Insufficient funds"
-          
+          return False
+        
         elif amount > self.account_balance:
           return False
-        else:
-          return True
-    
+      """ 
+        
           
                 
 #method display balance        
