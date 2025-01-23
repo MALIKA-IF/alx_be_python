@@ -15,8 +15,9 @@ class BankAccount:
         elif self.account_balance <= 0:
           return "Insufficient funds"
           return False
-        elif amount < self.account_balance:
+        elif amount > self.account_balance:
           return "Insufficient funds"
+          return False
                 
 #method display balance        
     def display_balance(self):
