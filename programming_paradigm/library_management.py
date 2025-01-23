@@ -1,20 +1,19 @@
 class Book:
   def __init__(self,title,author):
-     self.title=""
-     self.author=""
+     self.title=title
+     self.author=author
      self._is_checked_out=False
 
   def check_out(self):
     if not self._is_checked_out:
-      self._is_checked_out=True
-      return True
+       self._is_checked_out=True
+       return True
     return False  
-
-    pass
+     
   def return_book(self):
     if self._is_checked_out:
-      self._is_checked_out=False
-      return False
+       self._is_checked_out=False
+       return False
     return False
   def is_available(self):
     return not self._is_checked_out
