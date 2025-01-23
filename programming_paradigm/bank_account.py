@@ -16,7 +16,6 @@ class BankAccount:
           return "Insufficient funds"
           return False
         elif amount < self.account_balance:
-          return "Insufficient funds"
           return False 
           
         
