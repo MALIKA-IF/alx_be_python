@@ -9,14 +9,14 @@ class BankAccount:
     
 #method withraw
     def withdraw(self, amount): 
-        if self.account_balance != 0:
-          return True
-          
-        elif self.account_balance <= 0:
+       
+        if self.account_balance <= 0:
           return False
-        
         elif amount > self.account_balance:
           return False
+        else:
+          return True
+    
           
                 
 #method display balance        
