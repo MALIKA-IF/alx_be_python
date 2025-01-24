@@ -10,9 +10,9 @@ class BankAccount:
 #method withraw
     def withdraw(self, amount): 
       if self.account_balance > amount:
-          self.account_balance=self.account_balance-amount
+          self.account_balance -= amount
           return True
-      else:
+      elif self.account_balance <=0 and self.account_balance < amount:
           return False
       
       """    
@@ -22,8 +22,6 @@ class BankAccount:
         elif amount > self.account_balance:
           return False
       """ 
-        
-          
                 
 #method display balance        
     def display_balance(self):
