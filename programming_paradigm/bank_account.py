@@ -14,6 +14,7 @@ class BankAccount:
                 self.account_balance -= amount
                 return True
         except Exception:
+            print("Insufficient funds")
             return False  
       
 #method display balance        
