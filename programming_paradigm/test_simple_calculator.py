@@ -18,7 +18,7 @@ class TestOperation(unittest.TestCase):
        self.assertEqual(self.calc.subtract(-7, 6), 9)
        self.assertEqual(self.calc.subtract(0, 8), 9)
 
-    def test_multiply(self):  
+    def test_multiplication(self):  
        self.assertEqual(self.calc.multiply(5, 7), 35)
        self.assertEqual(self.calc.multiply(-1, 1), 0)
        self.assertEqual(self.calc.multiply(0, 9), -1)
@@ -32,7 +32,5 @@ class TestOperation(unittest.TestCase):
     
         
 
-#run
-unittest.main()       
 
   
