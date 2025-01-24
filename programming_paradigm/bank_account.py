@@ -12,6 +12,7 @@ class BankAccount:
         try:
             if amount < self.account_balance:
                 self.account_balance -= amount
+                print(f"Withdrew: ${self.account_balance}")
                 return True
         except Exception:
             print("Insufficient funds")
