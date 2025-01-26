@@ -23,7 +23,8 @@ class PrintBook(Book):
     def __str__(self):
         return f"{self.title} by {self.author}, page {self.page_count}"       
 
-class Library():
+class Library:
+    
     def __init__(self, books):
         self.books = []
 
@@ -32,7 +33,7 @@ class Library():
 
         def list_books(self):
             for book in self.books:
-                if Book:
+                if Book(book):
                   print(f"Book: {book}")
                 elif EBook(book): 
                   print(f"EBook: {book}")
