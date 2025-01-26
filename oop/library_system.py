@@ -21,17 +21,12 @@ class library:
         self.P=PrintBook(self.title, self.author, self.page_count)
 
         def add_book(self, book):
-            
             self.books = [self.B, self.E, self.P]
         
 
         def list_books(self):
             return self.books
-        
-mom = Library()
-classic_book = Book("Pride and Prejudice", "Jane Austen")
-mom.add_book(classic_book)
-print(mom)     
+
 
         
 
