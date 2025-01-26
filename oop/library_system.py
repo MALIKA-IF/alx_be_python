@@ -25,15 +25,11 @@ class PrintBook(Book):
 
 class library:
     def __init__(self, books):
-        self.books = books
-        self.B=Book(self.title, self.author)
-        self.E=EBook(self.title, self.author, self.file_size)
-        self.P=PrintBook(self.title, self.author, self.page_count)
+        self.books = []
 
         def add_book(self, book):
-            self.books = [self.B, self.E, self.P]
+            self.books.append(book)
         
-
         def list_books(self):
             return self.books
 
